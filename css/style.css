@@ -47,6 +47,14 @@ body {
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-logo {
+    height: 32px;
+    width: auto;
 }
 
 .nav-menu {
@@ -100,6 +108,23 @@ body {
     font-size: 2rem;
     margin-bottom: 1.5rem;
     color: #1a1a1a;
+}
+
+/* Section Header with Logo */
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.section-header h2 {
+    margin-bottom: 0;
+}
+
+.section-logo {
+    height: 48px;
+    width: auto;
 }
 
 /* Content */
@@ -202,6 +227,15 @@ body {
 
     .section {
         padding: 2rem 0;
+    }
+
+    .section-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-logo {
+        height: 40px;
     }
 
     .platform-row {
