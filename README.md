@@ -25,7 +25,7 @@ This site is configured to deploy automatically via GitHub Pages. To enable:
 3. Under "Source", select your branch (e.g., `main`)
 4. Click Save
 
-The site will be available at: `https://neia-kunal.github.io/neia-au/`
+The site will be available at: `https://<username>.github.io/neia-au/`
 
 ## Adding Content
 
