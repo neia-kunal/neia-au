@@ -12,8 +12,8 @@ html {
 body {
     font-family: 'Delius', cursive;
     line-height: 1.6;
-    color: #333;
-    background-color: #fff;
+    color: #e0e0e0;
+    background-color: #121212;
 }
 
 /* Titles use Montserrat */
@@ -32,12 +32,12 @@ h1, h2, h3, h4, h5, h6,
 
 /* Header and Navigation */
 .header {
-    background-color: #1a1a1a;
+    background-color: #fff;
     padding: 1rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .nav {
@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .nav-brand a {
-    color: #fff;
+    color: #1a1a1a;
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bold;
@@ -71,18 +71,18 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .nav-menu a {
-    color: #ecf0f1;
+    color: #1a1a1a;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .nav-menu a:hover {
-    color: #999;
+    color: #666;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #333 0%, #1a1a1a 100%);
+    background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
     color: #fff;
     text-align: center;
     padding: 6rem 2rem;
@@ -108,13 +108,13 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .section-alt {
-    background-color: #f8f9fa;
+    background-color: #1a1a1a;
 }
 
 .section h2 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
-    color: #1a1a1a;
+    color: #fff;
 }
 
 /* Section Header with Logo */
@@ -147,13 +147,13 @@ h1, h2, h3, h4, h5, h6,
 .content h3 {
     font-size: 1.5rem;
     margin: 2rem 0 1rem;
-    color: #1a1a1a;
+    color: #fff;
 }
 
 .content h4 {
     font-size: 1.25rem;
     margin: 1.5rem 0 0.75rem;
-    color: #333;
+    color: #e0e0e0;
 }
 
 .content ul, .content ol {
@@ -166,19 +166,19 @@ h1, h2, h3, h4, h5, h6,
 
 /* Platform Cards */
 .platform-card {
-    background: #fff;
+    background: #2a2a2a;
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     overflow: hidden;
 }
 
 .section-alt .platform-card {
-    background: #fff;
+    background: #2a2a2a;
 }
 
 .platform-row {
     padding: 1.5rem 2rem;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #3a3a3a;
 }
 
 .platform-row:last-child {
@@ -188,7 +188,7 @@ h1, h2, h3, h4, h5, h6,
 .platform-label {
     display: block;
     font-weight: 700;
-    color: #333;
+    color: #fff;
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -197,17 +197,17 @@ h1, h2, h3, h4, h5, h6,
 
 .platform-row p {
     margin: 0;
-    color: #555;
+    color: #c0c0c0;
 }
 
 .platform-row p strong {
-    color: #1a1a1a;
+    color: #fff;
 }
 
 /* Footer */
 .footer {
-    background-color: #1a1a1a;
-    color: #ecf0f1;
+    background-color: #0d0d0d;
+    color: #e0e0e0;
     text-align: center;
     padding: 2rem 0;
     margin-top: 2rem;
