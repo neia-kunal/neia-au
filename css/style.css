@@ -160,6 +160,17 @@ h1, h2, h3, h4, h5, h6,
     width: auto;
 }
 
+/* Section Links */
+.section-link {
+    color: #fff;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.section-link:hover {
+    opacity: 0.8;
+}
+
 /* Content */
 .content {
     font-size: 1.1rem;
