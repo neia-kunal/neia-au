@@ -3,327 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neia - Empowering Digital Solutions</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-        }
-        
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            padding: 60px 40px;
-        }
-        
-        header {
-            text-align: center;
-            margin-bottom: 50px;
-            padding-bottom: 30px;
-            border-bottom: 3px solid #667eea;
-        }
-        
-        h1 {
-            font-size: 3em;
-            color: #667eea;
-            font-weight: 700;
-        }
-        
-        .company-info {
-            background: #f8f9fa;
-            padding: 30px;
-            border-radius: 15px;
-            margin-bottom: 40px;
-            border-left: 5px solid #667eea;
-        }
-        
-        .company-info h2 {
-            color: #667eea;
-            margin-bottom: 15px;
-            font-size: 1.8em;
-        }
-        
-        .company-info p {
-            color: #555;
-            font-size: 1.1em;
-            line-height: 1.8;
-        }
-        
-        .businesses {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 30px;
-            margin-bottom: 40px;
-        }
-        
-        .business-card {
-            background: white;
-            border: 2px solid #e0e0e0;
-            border-radius: 15px;
-            padding: 30px;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-        
-        .business-card:hover {
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-            transform: translateY(-5px);
-        }
-        
-        .business-card h3 {
-            font-size: 2em;
-            margin-bottom: 10px;
-            color: #333;
-        }
-        
-        .status-badge {
-            display: inline-block;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.85em;
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-        
-        .status-active {
-            background: #d4edda;
-            color: #155724;
-        }
-        
-        .status-development {
-            background: #fff3cd;
-            color: #856404;
-        }
-        
-        .business-card p {
-            color: #666;
-            margin-bottom: 20px;
-            font-size: 1.05em;
-        }
-        
-        .links {
-            margin-top: 20px;
-            display: flex;
-            gap: 15px;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        
-        .brand-link {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-        
-        .brand-link:hover {
-            transform: scale(1.05);
-            opacity: 0.9;
-        }
-        
-        .linkedin-badge {
-            background: #0077b5;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-weight: 600;
-            font-size: 14px;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-        
-        .linkedin-badge svg {
-            width: 20px;
-            height: 20px;
-            fill: white;
-        }
-        
-        .play-store-badge {
-            background: #000;
-            color: white;
-            padding: 8px 16px;
-            border-radius: 5px;
-            font-weight: 600;
-            font-size: 14px;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-        
-        .play-store-badge svg {
-            width: 24px;
-            height: 24px;
-        }
-        
-        .contact-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 40px;
-            border-radius: 15px;
-            text-align: center;
-        }
-        
-        .contact-section h2 {
-            font-size: 2em;
-            margin-bottom: 25px;
-        }
-        
-        .contact-cards {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-        
-        .contact-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 25px 35px;
-            border-radius: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        
-        .contact-card h3 {
-            font-size: 1.3em;
-            margin-bottom: 15px;
-        }
-        
-        .contact-card a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.1em;
-            font-weight: 500;
-            border-bottom: 2px solid transparent;
-            transition: border-bottom 0.3s ease;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-        
-        .contact-card a:hover {
-            border-bottom: 2px solid white;
-        }
-        
-        .contact-icon {
-            font-size: 1.2em;
-        }
-        
-        .contact-item {
-            margin-bottom: 12px;
-        }
-        
-        @media (max-width: 768px) {
-            .container {
-                padding: 40px 20px;
-            }
-            
-            h1 {
-                font-size: 2em;
-            }
-            
-            .businesses {
-                grid-template-columns: 1fr;
-            }
-            
-            .contact-cards {
-                flex-direction: column;
-            }
-            
-            .links {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-        }
-    </style>
+    <meta name="description" content="Neia - Using AI to make life better, not just faster. Human-Augmented AI for a fair go at the good stuff in life.">
+    <title>Neia</title>
+    <link rel="icon" type="image/png" href="images/Neia-Logo.png">
+    <link rel="apple-touch-icon" href="images/Neia-Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Neia</h1>
-        </header>
-        
-        <section class="company-info">
-            <h2>About Neia</h2>
-            <p>
-                Neia is a startup dedicated to building innovative digital solutions. 
-                We operate multiple businesses focused on creating value through technology and user-centric design.
-            </p>
-        </section>
-        
-        <section class="businesses">
-            <div class="business-card">
-                <h3>Cyzo</h3>
-                <span class="status-badge status-active">Active Business</span>
-                <p>
-                    Our flagship active business delivering cutting-edge solutions to our users.
-                </p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/company/neia-cyzo" class="brand-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Cyzo on LinkedIn">
-                        <span class="linkedin-badge">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                            </svg>
-                            LinkedIn
-                        </span>
-                    </a>
-                    <a href="https://play.google.com/store/apps/details?id=com.neia.cyzo" class="brand-link" target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play">
-                        <span class="play-store-badge">
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#fff" d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
-                            </svg>
-                            Google Play
-                        </span>
-                    </a>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <img src="images/Neia-Logo.png" alt="Neia Logo" class="nav-logo">
+                    <span>Neia</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#philosophy">Philosophy</a></li>
+                <li><a href="#cyzo">Cyzo</a></li>
+                <li><a href="#asksome">AskSome.One</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>Welcome to Neia</h1>
+                    <p class="hero-subtitle">Using AI to make life <strong>better</strong>, not just faster</p>
+                </div>
+                <div class="hero-logo-box">
+                    <img src="images/Neia-Logo.png" alt="Neia Logo" class="hero-logo">
                 </div>
             </div>
-            
-            <div class="business-card">
-                <h3>AskSome.One</h3>
-                <span class="status-badge status-development">In Development</span>
-                <p>
-                    An exciting new venture currently under development. Stay tuned for updates!
-                </p>
+        </section>
+
+        <section id="philosophy" class="section">
+            <div class="container">
+                <h2>Human-Augmented AI: Giving Humans a Fair Go</h2>
+                <div class="content">
+                    <p>G'day! That Neia philosophy is spot-on, isn't it? It's basically saying, "Let's use the fancy tech to make life <strong>better</strong>, not just faster." We're not after cold, automated rubbish; we want AI to be our mate, giving us a fair go at the good stuff in life.</p>
+                    
+                    <p>Righto, let's talk about this "human-augmented AI" caper. The fancy term makes it sound like we're strapping jetpacks onto humans, but it's simpler than that.</p>
+                    
+                    <p>Instead of AI just doing a job <em>for</em> us (which is the old way), this new partnership means AI is taking on the <strong>boring, fiddly bits</strong> so the human can focus on the <strong>brilliant stuff</strong>. Think of it this way:</p>
+                    
+                    <ul>
+                        <li><strong>The Old Way:</strong> AI is a trusty old ute doing all the heavy lifting, and the human is just the passenger telling it where to go.</li>
+                        <li><strong>The Neia Way:</strong> AI is the high-tech power tool—a ripper bit of kit—that takes the grunt out of the job, letting the human carpenter focus on the beautiful, complex joinery.</li>
+                    </ul>
+
+                    <h3>What does this look like in the real world?</h3>
+                    
+                    <p>It's about letting humans be, well, <strong>more human</strong>:</p>
+                    
+                    <ul>
+                        <li><strong>The Creative Spark:</strong> Instead of an AI writing a whole novel, it does the donkey work—maybe it checks continuity errors or crunches through research on ancient Roman history in seconds. That leaves the writer with a clear headspace to invent truly original characters and killer plot twists. <strong>Pure human creativity, turbo-charged.</strong></li>
+                        <li><strong>The Doctor's Insight:</strong> AI can smash through thousands of X-rays in the time it takes to boil the billy, flagging the ones that look a bit sus. The doctor doesn't get replaced; they just get a reliable heads-up, so they can spend their precious time actually talking to the patient and figuring out the <strong>best treatment plan</strong>—the empathetic part AI can't touch.</li>
+                        <li><strong>The Everyday Legend:</strong> You spend ages trying to figure out the best travel insurance that covers you for a bit of surfing and a couple of beers. The AI sorts the complex fine print and lays out the three best options in five minutes flat. You then use your <strong>human judgment</strong> to pick the one that <em>feels</em> right.</li>
+                    </ul>
+                    
+                    <p>It's about ditching the monotony so we can chase passion, artistry, and those deep connections. We're using the tech to get more <strong>life and joy</strong> out of our days, not just trying to cut corners. That's the Neia vision: <strong>AI as the ultimate wingman</strong> for human genius.</p>
+                </div>
             </div>
         </section>
-        
-        <section class="contact-section">
-            <h2>Get in Touch</h2>
-            <div class="contact-cards">
-                <div class="contact-card">
-                    <h3>Neia</h3>
-                    <div class="contact-item">
-                        <a href="mailto:contact@m.neia.au" aria-label="Email Neia">
-                            <span class="contact-icon" aria-hidden="true">✉️</span>
-                            contact@m.neia.au
-                        </a>
+
+        <section id="cyzo" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <a href="https://cyzo.app" target="_blank" rel="noopener noreferrer">
+                        <img src="images/Cyzo-Logo-Icon.png" alt="Cyzo Logo" class="section-logo">
+                    </a>
+                    <h2><a href="https://cyzo.app" target="_blank" rel="noopener noreferrer" class="section-link">Cyzo: Your Cybersecurity Mate</a></h2>
+                </div>
+                <div class="content">
+                    <div class="platform-card">
+                        <div class="platform-row">
+                            <span class="platform-label">The Pitch</span>
+                            <p>Stop stressin' about hackers and dodgy links! Cyzo is your plain-talking security expert, available on web, iOS, and Android. It cuts through the jargon to tell you exactly what the threats are and what you need to do to stay safe.</p>
+                        </div>
+                        <div class="platform-row">
+                            <span class="platform-label">The Guts</span>
+                            <p>We trawl through the clear web, the dark web, and all the known security sources—the whole lot.</p>
+                        </div>
+                        <div class="platform-row">
+                            <span class="platform-label">The Neia Connection (AI Augmentation)</span>
+                            <p>This is where the partnership shines. That threat data usually comes out sounding like absolute gibberish. Cyzo uses AI to grab that complex message, strip out the fancy technical words, and give you a simple, <em>actionable</em> alert. <strong>No more head-scratching, just follow the steps.</strong></p>
+                        </div>
+                        <div class="platform-row">
+                            <span class="platform-label">Who It's For</span>
+                            <p>Everyone! Whether you're a tech guru or someone who still calls the USB port the 'thingy-ma-jig,' Cyzo gives you the essential details to look after yourself.</p>
+                        </div>
+                        <div class="platform-row">
+                            <span class="platform-label">Get Cyzo</span>
+                            <div class="platform-badges">
+                                <a href="https://www.linkedin.com/company/neia-cyzo" target="_blank" rel="noopener noreferrer" class="platform-badge linkedin-badge" aria-label="Follow Cyzo on LinkedIn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                                        <path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="https://play.google.com/store/apps/details?id=com.neia.cyzo" target="_blank" rel="noopener noreferrer" class="platform-badge playstore-badge" aria-label="Get Cyzo on Google Play">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                                        <path fill="currentColor" d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+                                    </svg>
+                                    <span>Google Play</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="contact-card">
-                    <h3>Cyzo</h3>
-                    <div class="contact-item">
-                        <a href="mailto:contact@mail.cyzo.app" aria-label="Email Cyzo">
-                            <span class="contact-icon" aria-hidden="true">✉️</span>
-                            contact@mail.cyzo.app
-                        </a>
+            </div>
+        </section>
+
+        <section id="asksome" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <a href="https://asksome.one" target="_blank" rel="noopener noreferrer">
+                        <img src="images/AskSome.One-Logo-Purple.png" alt="AskSome.One Logo" class="section-logo">
+                    </a>
+                    <h2><a href="https://asksome.one" target="_blank" rel="noopener noreferrer" class="section-link">AskSome.One: Trusted Advice from a Real Person</a></h2>
+                </div>
+                <div class="content">
+                    <div class="platform-card">
+                        <div class="platform-row">
+                            <span class="platform-label">The Pitch</span>
+                            <p>Forget the dodgy, generic advice you get from search engines. AskSome.One is where you go to get the <strong>trusted oil</strong> on anything you're thinkin' about, straight from a real legend who's actually done it.</p>
+                        </div>
+                        <div class="platform-row">
+                            <span class="platform-label">What You Get Advice On</span>
+                            <p>Everything under the sun! Need to know the best time to visit Tassie? Got an offer from a new company and want the inside word before you accept? About to buy your first house and need tips on avoiding a shocker? Need to figure out the local pub scene after moving somewhere new? <strong>AskSome.One has the actual experiences.</strong></p>
+                        </div>
+                        <div class="platform-row">
+                            <span class="platform-label">The Neia Connection (Human-Centered Design)</span>
+                            <p>This platform is the epitome of the Neia philosophy. It completely ignores cold automation and transactional platforms, focusing instead on <strong>human empathy, experience, and judgment.</strong> It creates a Cultural Ecosystem where people help each other find fulfillment and purpose through shared wisdom.</p>
+                        </div>
+                        <div class="platform-row">
+                            <span class="platform-label">The Core Value</span>
+                            <p><strong>Real people, real experience, real advice.</strong> It's about leveraging collective human wisdom for better decision-making.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-    </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Neia. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
