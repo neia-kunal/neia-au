@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neia - Empowering Digital Solutions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 60px 40px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        h1 {
+            font-size: 3em;
+            color: #667eea;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            color: #666;
+            font-weight: 300;
+        }
+        
+        .company-info {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            border-left: 5px solid #667eea;
+        }
+        
+        .company-info h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        
+        .company-info p {
+            color: #555;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+        
+        .businesses {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .business-card {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 15px;
+            padding: 30px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .business-card:hover {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            transform: translateY(-5px);
+        }
+        
+        .business-card h3 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .status-active {
+            background: #d4edda;
+            color: #155724;
+        }
+        
+        .status-development {
+            background: #fff3cd;
+            color: #856404;
+        }
+        
+        .business-card p {
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 1.05em;
+        }
+        
+        .links {
+            margin-top: 20px;
+        }
+        
+        .link-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px 5px 5px 0;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .link-button:hover {
+            background: #5568d3;
+        }
+        
+        .link-button.secondary {
+            background: #764ba2;
+        }
+        
+        .link-button.secondary:hover {
+            background: #5f3c82;
+        }
+        
+        .contact-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        .contact-section h2 {
+            font-size: 2em;
+            margin-bottom: 25px;
+        }
+        
+        .contact-cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 25px 35px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .contact-card h3 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+        
+        .contact-card a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 500;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom 0.3s ease;
+        }
+        
+        .contact-card a:hover {
+            border-bottom: 2px solid white;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .businesses {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-cards {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Neia</h1>
+            <p class="subtitle">Registered Company • Empowering Digital Solutions</p>
+        </header>
+        
+        <section class="company-info">
+            <h2>About Neia</h2>
+            <p>
+                Neia is a registered company dedicated to building innovative digital solutions. 
+                We operate multiple businesses focused on creating value through technology and user-centric design.
+            </p>
+        </section>
+        
+        <section class="businesses">
+            <div class="business-card">
+                <h3>Cyzo</h3>
+                <span class="status-badge status-active">Active Business</span>
+                <p>
+                    Our flagship active business delivering cutting-edge solutions to our users.
+                </p>
+                <div class="links">
+                    <a href="https://www.linkedin.com/company/neia-cyzo" class="link-button" target="_blank" rel="noopener">
+                        LinkedIn
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.neia.cyzo" class="link-button secondary" target="_blank" rel="noopener">
+                        Google Play Store
+                    </a>
+                </div>
+            </div>
+            
+            <div class="business-card">
+                <h3>AskSome.One</h3>
+                <span class="status-badge status-development">In Development</span>
+                <p>
+                    An exciting new venture currently under development. Stay tuned for updates!
+                </p>
+            </div>
+        </section>
+        
+        <section class="contact-section">
+            <h2>Get in Touch</h2>
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <h3>Neia</h3>
+                    <a href="mailto:contact@m.neia.au">contact@m.neia.au</a>
+                </div>
+                <div class="contact-card">
+                    <h3>Cyzo</h3>
+                    <a href="mailto:contact@mail.cyzo.app">contact@mail.cyzo.app</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
