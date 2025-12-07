@@ -1,0 +1,12 @@
+# Our security policy and vulnerability disclosure program
+Contact: mailto:contact@m.neia.au
+Expires: 2026-12-31T23:59:59.000Z
+Preferred-Languages: en
+Canonical: https://neia.au/.well-known/security.txt
+
+# Security policies
+Policy: https://neia.au/SECURITY.md
+
+# If you discover a security vulnerability, please report it responsibly.
+# We appreciate your efforts to disclose the issue responsibly and will
+# make every effort to acknowledge your contributions.
