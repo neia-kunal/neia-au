@@ -257,6 +257,15 @@ h1, h2, h3, h4, h5, h6,
     box-shadow: 0 4px 12px rgba(52, 168, 83, 0.4);
 }
 
+.linkedin-icon {
+    background-color: #0077B5;
+    color: #fff;
+}
+
+.linkedin-icon:hover {
+    box-shadow: 0 4px 12px rgba(0, 119, 181, 0.4);
+}
+
 /* Content */
 .content {
     font-size: 1.1rem;
