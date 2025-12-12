@@ -203,28 +203,58 @@ h1, h2, h3, h4, h5, h6,
     color: #fff;
 }
 
-/* App Store Badges */
-.app-store-badges {
+/* Platform Links */
+.platform-links {
     display: flex;
     gap: 1rem;
     margin-bottom: 1.5rem;
     flex-wrap: wrap;
 }
 
-.app-badge {
-    display: inline-block;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+.platform-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.app-badge:hover {
+.platform-icon:hover {
     transform: translateY(-2px);
-    opacity: 0.9;
 }
 
-.app-badge svg {
-    display: block;
-    height: 2.5rem;
-    width: auto;
+.platform-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.web-icon {
+    background-color: #4A90E2;
+    color: #fff;
+}
+
+.web-icon:hover {
+    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.4);
+}
+
+.apple-icon {
+    background-color: #000;
+    color: #fff;
+}
+
+.apple-icon:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.google-play-icon {
+    background-color: #34A853;
+    color: #fff;
+}
+
+.google-play-icon:hover {
+    box-shadow: 0 4px 12px rgba(52, 168, 83, 0.4);
 }
 
 /* Content */
@@ -355,7 +385,7 @@ h1, h2, h3, h4, h5, h6,
         justify-content: center;
     }
 
-    .app-store-badges {
+    .platform-links {
         justify-content: center;
     }
 
