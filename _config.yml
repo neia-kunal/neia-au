@@ -1,8 +1,0 @@
-# GitHub Pages Configuration
-title: Neia Australia
-description: Neia Australia Website
-url: ""
-baseurl: ""
-
-# Build settings
-markdown: kramdown
