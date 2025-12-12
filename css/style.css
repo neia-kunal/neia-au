@@ -203,6 +203,30 @@ h1, h2, h3, h4, h5, h6,
     color: #fff;
 }
 
+/* App Store Badges */
+.app-store-badges {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.app-badge {
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.app-badge:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.app-badge svg {
+    display: block;
+    height: 40px;
+    width: auto;
+}
+
 /* Content */
 .content {
     font-size: 1.1rem;
@@ -328,6 +352,10 @@ h1, h2, h3, h4, h5, h6,
     }
 
     .social-links {
+        justify-content: center;
+    }
+
+    .app-store-badges {
         justify-content: center;
     }
 
